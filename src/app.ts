@@ -24,3 +24,9 @@ app.listen(process.env.EXPRESS_PORT,()=>{
     console.log(`App is listening at port ${process.env.EXPRESS_PORT}`)
 
 })
+
+// routes
+
+app.get("/",(req,res)=>{
+    res.status(200).json({message:"hi"})
+})
